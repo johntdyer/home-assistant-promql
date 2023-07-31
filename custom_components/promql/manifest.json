@@ -1,9 +1,9 @@
 {
-    "domain": "promql",
-    "name": "PromQL",
+    "domain": "promql-fork",
+    "name": "PromQL-fork",
     "config_flow": true,
-    "documentation": "https://github.com/Adi146/home-assistant-promql",
-    "codeowners": ["@Adi146"],
+    "documentation": "https://github.com/johntdyer/home-assistant-promql",
+    "codeowners": ["@johntdyer"],
     "requirements": [],
     "iot_class": "local_polling",
     "version": "0.0.1"
