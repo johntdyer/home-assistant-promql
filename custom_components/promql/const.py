@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Final
 
-DOMAIN: Final = "promql"
+DOMAIN: Final = "promql-fork"
 
 CONF_QUERY = "query"
 
