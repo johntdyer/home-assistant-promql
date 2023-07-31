@@ -29,7 +29,8 @@ async def async_setup_entry(
     if not entry.data[CONF_VERIFY_SSL]:
         requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
-    hass.config_entries.async_setup_platforms(entry, ["sensor"])
+    """ disabled:  hass.config_entries.async_setup_platforms(entry, ["sensor"])"""
+    await hass.config_entries.async_forward_entry_setups(entry, ["sensor"])
 
     entry.async_on_unload(entry.add_update_listener(async_options_updated))
 
